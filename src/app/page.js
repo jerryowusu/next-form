@@ -60,7 +60,7 @@ const Home = () => {
     
   return (
     <div className="font-[sans-serif] text-[#333]">
-      <div className="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[160px] sm:p-6 p-4">
+      <div className="text-center bg-gradient-to-r from-blue-800 to-blue-400 min-h-[200px] sm:p-6 p-4">
         <h3 className="text-2xl font-bold text-white sm:text-3xl">Enter Your Personal Information</h3>
       </div>
 
