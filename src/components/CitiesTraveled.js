@@ -3,27 +3,27 @@ const CitiesTraveled = ({ cities, onCityChange, onAddCity, onRemoveCity }) => {
     <div className="mb-6">
         <h2 className="mb-4 text-2xl font-bold to-gray-800">Cities Traveled</h2>
         {cities.map((city, index) => (
-            <div key={index} className="grid grid-cols-2 gap-4">
-              <div>
-                  <label htmlFor={`dateArrived${index}`}>Date Arrived</label>
+            <div key={index}>
+              <div className="mt-4">
+                  <label className="block mb-2 text-sm" htmlFor={`dateArrived${index}`}>Date Arrived</label>
                   <input 
                     type="date" 
                     id={`dateArrived${index}`}
                     name="dateArrived"
                     value={city.dateArrived}
                     onChange={(event) => onCityChange(index, event)}
-                    className="w-full p-2 border"
+                    className="w-full px-4 py-3 text-sm bg-gray-100 rounded-md outline-blue-500"
                   />
               </div>
               <div>
-                  <label htmlFor={`cityName${index}`}>City Name</label>
+                  <label className="block mb-2 text-sm" htmlFor={`cityName${index}`}>City Name</label>
                   <input 
                     type="text" 
                     id={`cityName${index}`}
                     name="cityName"
                     value={city.cityName}
                     onChange={(event) => onCityChange(index, event)}
-                    className="w-full p-2 border"
+                    className="w-full px-4 py-3 text-sm bg-gray-100 rounded-md outline-blue-500"
                   />
               </div>
               {index > 0 && (
@@ -31,7 +31,7 @@ const CitiesTraveled = ({ cities, onCityChange, onAddCity, onRemoveCity }) => {
                     <button
                       type="button"
                       onClick={() => onRemoveCity(index)}
-                      className="text-red-500"
+                      className="mt-4 text-red-500"
                     >
                         Remove
                     </button>
@@ -42,7 +42,8 @@ const CitiesTraveled = ({ cities, onCityChange, onAddCity, onRemoveCity }) => {
         <button
           type="button"
           onClick={onAddCity}
-          className="p-2 mt-4 text-white bg-blue-500"
+          className="min-w-[150px] py-3 px-4 text-sm font-semibold rounded-md
+           text-white bg-gray-400 hover:bg-blue-500 focus:outline-none mt-4"
         >
             Add City
         </button>
