@@ -102,7 +102,7 @@ eslint test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jerryowusu/next-form.git/issues).
+Feel free to check the [issues page](https://github.com/jerryowusu/next-form/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
