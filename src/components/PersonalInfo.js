@@ -1,4 +1,4 @@
-const PersonalInfo = ({ onChange, values }) => {
+const PersonalInfo = ({ onPersonalChange, personalInfo }) => {
   return (
     <div className="mb-6">
         <h2 className="mb-4 text-xl font-bold text-gray-800">Personal Information</h2>
@@ -9,8 +9,8 @@ const PersonalInfo = ({ onChange, values }) => {
                   type="text" 
                   id="firstName"
                   name="firstName"
-                  value={values.firstName}
-                  onChange={onChange}
+                  value={personalInfo.firstName}
+                  onChange={onPersonalChange}
                   className="w-full px-4 py-3 text-sm bg-gray-100 rounded-md outline-blue-500"
                 />
             </div>
@@ -20,8 +20,8 @@ const PersonalInfo = ({ onChange, values }) => {
                   type="text" 
                   id="lastName"
                   name="lastName"
-                  value={values.lastName}
-                  onChange={onChange}
+                  value={personalInfo.lastName}
+                  onChange={onPersonalChange}
                   className="w-full px-4 py-3 text-sm bg-gray-100 rounded-md outline-blue-500"
                 />
             </div>
@@ -31,8 +31,8 @@ const PersonalInfo = ({ onChange, values }) => {
                   type="date" 
                   id="dob"
                   name="dob"
-                  value={values.dob}
-                  onChange={onChange}
+                  value={personalInfo.dob}
+                  onChange={onPersonalChange}
                   className="w-full px-4 py-3 text-sm bg-gray-100 rounded-md outline-blue-500"
                 />
             </div>
